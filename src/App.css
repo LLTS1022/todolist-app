@@ -1,15 +1,19 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  /* Add a subtle animation to the logo */
+  animation: App-logo-spin infinite 20s linear;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /* Apply the animation only if motion is not reduced */
+ .App-logo {
+    transform-origin: center;
   }
 }
 
@@ -21,11 +25,17 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: blue;
 }
 
 .App-link {
   color: #61dafb;
+  /* Add hover effect for links */
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #ff7f50; /* Coral color on hover */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +45,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.to-do-list {
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+border: 10px solid blue;
+padding: 10px;
+margin-bottom: 20px;
+background-color: rgb(191, 241, 110);
+margin-top: 100px;
+
+}
+h1 {
+  font-size: 4rem;
+}
+
+button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+.add-button {
+  background-color: rgb(77, 238, 147);
+}
+.add-button:hover{
+  background-color: seagreen;
 }
