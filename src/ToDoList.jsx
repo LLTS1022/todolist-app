@@ -49,7 +49,7 @@ function ToDoList() {
         </button>
       </div>
       <ol>
-        <article>
+        <article></article>
         {tasks.map((task, index) => (
           <Task
             key={index}
@@ -60,7 +60,6 @@ function ToDoList() {
             moveTaskDown={moveTaskDown}
           />
         ))}
-        </article>
       </ol>
     </div>
    
