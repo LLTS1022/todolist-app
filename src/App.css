@@ -1,7 +1,8 @@
-/* Iron Man To-Do List Styling (Red and Yellow Theme) */
+/* Computer Science Student To-Do List Styling (Green and Black Theme) */
 
 .App {
   text-align: center;
+  background-color: #121212; /* Dark background for a techy look */
 }
 
 .App-logo {
@@ -19,14 +20,14 @@
 }
 
 .App-header {
-  background-color: #ff7f50; /* Iron Man red */
+  background-color: #1e1e1e; /* Darker background for header */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #f9d71c; /* Iron Man yellow */
+  color: #00ff00; /* Green text color for a code-like feel */
 }
 
 .App-link {
@@ -36,7 +37,7 @@
 }
 
 .App-link:hover {
-  color: #ff7f50; /* Coral color on hover */
+  color: #00ff00; /* Green color on hover */
 }
 
 @keyframes App-logo-spin {
@@ -49,38 +50,45 @@
 }
 
 .to-do-list {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Courier New', Courier, monospace; /* Code-like font */
   text-align: center;
-  border: 10px solid #f9d71c; /* Iron Man yellow border */
+  border: 5px solid #00ff00; /* Green border */
   padding: 10px;
   margin-bottom: 20px;
-  background-color: #ff5050; /* Iron Man red background */
+  background-color: #282c34; /* Dark background */
   margin-top: 100px;
-  color: white;
+  color: #00ff00; /* Green text color */
   margin-right: 10px;
   padding-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Green glowing shadow */
 }
 
 h1 {
   font-size: 4rem;
-  color: white; /* Iron Man yellow for heading */
+  color: #00ff00; /* Green color for heading */
 }
 
 button {
   font-size: 1.7rem;
   font-weight: bold;
   padding: 10px 20px;
-  color: rgb(190, 23, 23);
+  color: #282c34; /* Dark text color */
+  background-color: #00ff00; /* Green background for button */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease, transform 0.2s;
+  margin-top: 2%;
+  margin-left: 2%;
+  align-content: center;
+}
+
+button:hover {
+  background-color: #1e1e1e; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
 }
 
 .add-button {
-  background-color: #f9d71c; /* Iron Man yellow button color */
+  background-color: #00ff00; /* Green button color */
 }
-/* App.css */
-.to-do-list {
-  background-image: url(/src/IronMan.jpg);
-}
+
